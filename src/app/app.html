@@ -1,1 +1,28 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content" type="overlay">
+       
+        <ion-content>
+          <ion-list>
+            <ion-item class="user-detail">
+                <ion-avatar item-start>
+                    <img src="../assets/imgs/karankalia.jpg">
+                </ion-avatar>
+                <h2>Karan Kalia</h2>
+                <p>karankalia@gmail.com</p>
+            </ion-item>
+            <button ion-item (click)="openPage(homePage)">
+              Home
+            </button>
+            <button ion-item (click)="openPage(friendsPage)">
+              Friends
+            </button>
+            <button ion-item (click)="openPage(eventsPage)">
+              Events
+            </button>
+            <button ion-item (click)="closeMenu()">
+              Close Menu
+            </button>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

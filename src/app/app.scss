@@ -14,3 +14,75 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.tabbar a[aria-selected=true] {
+    background: #4a7ba5 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4a7ba5), to(#3e75a3)) !important;
+    background: linear-gradient(to bottom, #487eaf 0%, #355d82 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a7ba5', endColorstr='#3e75a3',GradientType=0 );
+}
+
+.tabbar a{
+    background: #4a7ba5 !important;
+    background: -moz-linear-gradient(top, #4a7ba5 0%, #3e75a3 100%) !important;
+    background: -webkit-linear-gradient(top, #4a7ba5 0%,#3e75a3 100%) !important;
+    background: linear-gradient(to bottom, #4a7ba5 0%,#3e75a3 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a7ba5', endColorstr='#3e75a3',GradientType=0 );
+    color: white !important;
+    border-left: 1px solid #3e6c8e;
+    border-right: 1px solid #5488af;
+    
+}
+.tabbar a .icon{
+    color: white !important;
+}
+
+.menu-enabled .menu-inner {
+    background: transparent !important;
+
+    .content-ios,  .content-md {
+        color: #000;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    }
+
+    button.item {
+        padding-left: 0px;
+        color: #13202f;
+        background-color: transparent;
+        padding-left: 0px;
+        .item-inner{
+            border-bottom: 1px solid #dedede;
+        padding-left: 20px;
+        }
+
+    }
+
+    .toolbar {
+        .toolbar-background {
+            border-color: #b2b2b2;
+            background: #4477a4;
+            border-bottom: none;
+        }
+
+        .toolbar-title {
+                
+            color: #ffffff !important;
+        }
+    }
+
+    
+}
+.user-detail {
+    background-color: #345e84;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+
+    .item-inner{
+        border-bottom:none !important
+    }
+    p{
+        color: #abc9e6;
+    }
+}

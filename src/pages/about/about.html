@@ -1,11 +1,31 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-toolbar>
+        <button ion-button menuToggle icon-only (click)="presentPopover($event)">
+            <ion-icon name='menu'></ion-icon>
+        </button>
+
+      <ion-title>About</ion-title>
+      
+      <ion-buttons end>
+        <button ion-button icon-only color="royal">
+          <ion-icon name="person-add"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-content padding>
+
+  <div class="about-section">
+    <div class="youtube-image">
+      <img src="../../assets/imgs/video-1-1.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+      <h4>About Legitquest</h4>
+      <p>LegitQuest is a Legal-Tech venture run by a versatile team of tech-savvy attorneys, engineers and designers who aim to make the practice of law simpler for its end users. Eminent jurist Mr. Ram Jethmalani is our patron, advisor and investor. Seeking to transform centuries-old unorganised and unstructured legal data for the benefit of the legal fraternity, we have built a one of its kind go-to platform with the most updated technologies for the communities of attorneys, law firms, state judicial officers, law students, corporates, the government, consulting companies, litigants, and many other stakeholders in the legal system.</p>
+      <p>This secure platform helps the stakeholders to research efficiently with the most advanced search engine developed through cutting edge technology as we have transformed complex data into a user-friendly form to make legal research faster. We will be providing access to the vast and comprehensive legal database to our users in the most reliable, accurate, valuable and speedy manner. LegitQuest strives to become a one-stop solution for the legal fraternity.</p>
+    </div>
+  </div>
 
 </ion-content>
