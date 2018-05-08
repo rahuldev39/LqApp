@@ -1,6 +1,6 @@
 {
   "name": "LqApp",
-  "app_id": "",
+  "app_id": "b14e02e2",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
